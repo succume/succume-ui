@@ -1,0 +1,29 @@
+.user-page-menu{
+
+}
+
+.user-page-menu > .semi-tabs-bar.semi-tabs-bar-line.semi-tabs-bar-top {
+    height: 60px;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.user-page-menu .semi-tabs-tab{
+    height: 60px;
+    padding: 0 10px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-page-menu .semi-tabs-tab-active {
+    border-color: #00A1D6 !important;
+}
+
+.user-page-menu .semi-tabs-tab, .user-page-menu .semi-tabs-tab-active, .semi-tabs-tab-active:hover {
+    font-weight: 500 !important;
+}
+
+.user-page-menu .semi-tabs-tab-active .semi-icon.semi-icon-default{
+    color: #00A1D6 !important;
+}
