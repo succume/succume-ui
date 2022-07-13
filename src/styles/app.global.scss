@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.semi-form-horizontal .semi-form-field {
+  width: 90%;
+}
+
+.semi-select.semi-select-single, .semi-datepicker{
+  width: 100%;
+}
+
+.semi-form-horizontal .semi-form-field, .semi-select.semi-select-single{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.semi-form-horizontal .semi-form-field:last-child {
+  margin: 0 !important;
+}

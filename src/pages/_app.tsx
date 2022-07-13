@@ -1,13 +1,16 @@
-import '@/styles/styles.css';
-import '@/styles/user.global.css';
+import '../styles/app.global.scss';
 
 import { UserProvider } from '@auth0/nextjs-auth0';
 import type { AppProps } from 'next/app';
 
+import { StoreProvider } from '@/store';
+
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <UserProvider>
-    <Component {...pageProps} />
-  </UserProvider>
+  <StoreProvider initialValue={{ user: {} }}>
+    <UserProvider>
+      <Component {...pageProps} />
+    </UserProvider>
+  </StoreProvider>
 );
 
 export default MyApp;

@@ -16,14 +16,21 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.9.1",
+    "@douyinfe/semi-icons": "^2.14.0",
     "@douyinfe/semi-ui": "^2.14.0",
+    "@octokit/core": "^4.0.4",
     "axios": "^0.27.2",
-    "moment": "^2.29.3",
+    "cropperjs": "^1.5.12",
+    "mobx": "^6.6.1",
+    "mobx-react-lite": "^3.4.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.4.4",
     "next": "^12.2.0",
     "next-seo": "^5.4.0",
     "react": "^18.2.0",
     "react-cropper": "^2.1.8",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.53.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",

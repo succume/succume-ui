@@ -1,0 +1,24 @@
+.term_container {
+  .term_wrapper {
+
+  }
+}
+
+.new_user_steps_controllers{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .finishBtn, .prevBtn {
+    width: 110px;
+  }
+
+  .prevBtn{
+    margin-right: 10px ;
+  }
+}

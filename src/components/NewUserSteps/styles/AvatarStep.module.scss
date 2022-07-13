@@ -1,0 +1,109 @@
+.avatar_step_container{
+  width: 100%;
+  height: 100%;
+
+  .avatar_step_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar_step_cropper{
+      width: 100%;
+      height: 360px;
+      overflow: scroll;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+      border-top: 1px solid rgba(204, 204, 204, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .avatar_step_cropper_features{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .avatar_step_previewer_container{
+        width: 50%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .avatar_step_previewer{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+
+          .cropper_preview_box{
+            width: 180px;
+            height: 180px;
+            overflow: hidden;
+            background-color: #ccc;
+            border-radius: 180px;
+          }
+        }
+
+        .avatar_step_previewer_label{
+          font-size: 0.8rem;
+          margin-top: 10px;
+          font-weight: bolder;
+          text-transform: uppercase;
+        }
+      }
+
+      .avatar_step_features_container{
+        width: 50%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .avatar_step_features_wrapper{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 30px 0;
+
+          .cropper_btn{
+            width: 160px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.new_user_steps_controllers{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nextBtn, .prevBtn {
+    width: 110px;
+  }
+
+  .prevBtn{
+    margin-right: 10px ;
+  }
+}

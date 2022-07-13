@@ -1,41 +1,18 @@
-import { useUser } from '@auth0/nextjs-auth0';
-import { Avatar } from '@douyinfe/semi-ui';
+import { Button } from '@douyinfe/semi-ui';
 import Link from 'next/link';
 
-import styles from '@/styles/index.module.css';
-
-const UserAvatar = () => {
-  const { user } = useUser();
-  if (user) {
-    return (
-      <div className={styles.authUserAvatar}>
-        <Avatar
-          alt={`avatar for user ${user.name}`}
-          // @ts-ignore
-          src={user.picture}
-        />
-      </div>
-    );
-  }
-  return (
-    <Avatar
-      alt="default user avatar"
-      src="/assets/images/default_avatar.jpeg"
-    />
-  );
-};
+import Page from '@/components/_common/Page';
 
 const Index = () => {
-  const { user } = useUser();
-
   return (
-    <div className={styles.container}>
-      <Link href={`/user/${user?.sub?.split('|')[1]}`}>
+    <Page>
+      <p>Index Page</p>
+      <Link href="/user">
         <a>
-          <UserAvatar />
+          <Button>User Profile</Button>
         </a>
       </Link>
-    </div>
+    </Page>
   );
 };
 
